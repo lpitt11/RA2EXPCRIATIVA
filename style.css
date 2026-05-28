@@ -1,0 +1,235 @@
+header {
+    background-color: #111111; 
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #00489b; 
+    border-bottom: 2px solid #00489b; 
+}
+
+.lindeza {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 25px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.catalogo-jogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.card-jogo {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 12px;
+    transition: 1s;
+}
+.card-jogo:hover {
+    transform: scale(1.05);
+}
+
+.card-jogo img {
+    width: 250px;        
+    height: 200px;      
+    padding-left: 25%; 
+}
+
+
+.card-jogo h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.card-jogo h2 {
+    font-size: 20px;
+    color: #666;
+    font-weight: normal;
+}
+
+.card-jogo h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-jogo ul {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+.card-jogo button, .btn-salvar {
+    width: 100%;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.card-jogo button {
+    margin-top: auto; 
+    background-color: #00489b;
+    color: #ffffff; 
+}
+.card-jogo button a{
+    color: red;
+}
+
+.card-jogo button:hover {
+    background-color: #003366; 
+}
+
+.btn-salvar {
+    margin-top: 15px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.btn-salvar:hover {
+    background-color: #333333; 
+}
+
+.card-jogo button:active, .btn-salvar:active {
+    transform: scale(0.98);
+}
+
+.teste {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    height: auto;
+}
+
+.teste form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.teste label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.teste input, .teste select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.area-ranking table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.area-ranking th, .area-ranking td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.area-ranking th {
+    background-color: #111;
+    color: white;
+}
+
+footer {
+    background-color: #111111; 
+    padding: 15px 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.requisitos-gamer {
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.input-toggle {
+    display: none; 
+}
+
+.botao-requisitos {
+    display: block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.botao-requisitos:hover {
+    background-color: #e0e0e0;
+}
+
+.painel-requisitos {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease; 
+    background-color: #fafafa;
+    border-radius: 0 0 4px 4px;
+    font-size: 12px;
+    color: #555;
+    line-height: 3px;
+}
+
+.input-toggle:checked ~ .painel-requisitos {
+    max-height: 100px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.input-toggle:checked ~ .botao-requisitos {
+    background-color: #00489b;
+    color: white;
+    border-color: #00489b;
+}
